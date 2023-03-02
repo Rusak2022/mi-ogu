@@ -1,0 +1,73 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>hlp-07-2</title>
+</head>
+
+<body lang="RU">
+
+<h3>Проверка гипотезы о нормальном распределении. <b>Интервальный
+вариационный ряд</b></h3>
+
+<p>Пусть эмпирическое распределение задано в виде
+интервального вариационного ряда следующего
+вида (<i>s</i> — число интервалов группировки): </p>
+
+<p align="center"><img src="images/chi2-tabl2.GIF" 
+alt="chi2-tabl2.GIF (1507 bytes)"></p>
+
+<p>Для того чтобы вычислить статистику 
+<img border="0" src="images/chi-2.gif" width="22" height="25">&nbsp;при нормальном
+распределении для интервального вариационного
+ряда, нужно:
+
+<ol>
+  <li>Перейти от исходной величины <i>Х</i> к новой
+    величине <i>Z<br>
+    <sub><img src="images/z_new.gif"></sub></i><br>
+    и вычислить концы интервалов <sub><img src="images/z_interv.gif"
+    align="middle"></sub>.<br>
+    <i>z</i><sub>min</sub> принять равной <sub><img src="infty_m.gif"
+    align="middle"></sub>,<i> z</i><sub>max</sub> — равной <sub><img
+    src="infty_p.gif" align="middle"></sub>. <br>
+  </li>
+  <li>Вычислить теоретические частоты<br>
+    <br>
+    <sub><img src="images/image012.gif"></sub><br>
+    <br>
+    где <i>n</i> — объем выборки, Ф(<i>Z</i>) — функция
+    Лапласа. Значение функции Лапласа можно
+    вычислить с помощью функции Excel НОРМРАСП.
+    Например, функция <p ALIGN="CENTER">=НОРМРАСП(1,82; 2,5;&nbsp;1,4;
+    1)</p>
+    <p>возвращает значения функции Лапласа от <em>z&nbsp;=</em>1,82
+    при выборочном среднем <img src="images/x_aver.gif" align="middle">
+    =&nbsp;2,5 и выборочным среднем
+    квадратическом отклонении <em>s<sub>x</sub></em>&nbsp;=&nbsp;1,4.</p>
+  </li>
+  <li>Составить расчетную таблицу по следующему
+    образцу:<br>
+    <img src="images/chi2-tabl3.GIF" alt="chi2-tabl3.GIF (3409 bytes)"><br>
+  </li>
+  <li>Определить критерий <img src="chi-2.gif" align="middle">&nbsp;по формуле:<br>
+    <br>
+    <sub><img src="images/image007.gif"></sub><br>
+    <br>
+    и сравнить с критическим значением <img src="chi2_0.gif"
+    align="middle">.Значение <img src="chi2_0.gif"
+    align="middle"> удобно вычислять с помощью
+    функции Excel ХИ2ОБР. Например,<p ALIGN="CENTER">=ХИ2ОБР(0,05; 5)</p>
+    <p><b>Примечание</b><strong> 1.</strong> Число степеней
+    свободы принять равным <i>k&nbsp;=&nbsp;s&nbsp;–&nbsp;</i>3 , где
+    <em>s</em> <i>– </i>число интервалов группировки.</p>
+    <p><b>Примечание</b><strong> 2.</strong> Малочисленные
+    частоты (<i>n<sub>i </sub></i>&lt; 5) следует объединить. При
+    этом нужно откорректировать число степеней
+    свободы, приняв в качестве <i>s</i> число групп
+    выборки, оставшихся после объединения частот.</p>
+    <p align="center">&nbsp;</p>
+  </li>
+</ol>
+</body>
+</html>

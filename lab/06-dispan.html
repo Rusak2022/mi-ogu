@@ -1,0 +1,228 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<title>LR-06 DispAn</title>
+</head>
+
+<body BACKGROUND="..\bgrLab.jpg">
+<b>
+
+<p>ЛАБОРАТОРНАЯ РАБОТА № LR-07 </p>
+</b>
+
+<hr>
+<b>
+
+<p></b><strong>ОДНОФАКТОРНЫЙ ДИСПЕРСИОННЫЙ АНАЛИЗ</strong><b></p>
+
+<p>Задание 1</b><strong>. Решите следующую задачу:</strong> </p>
+
+<p>Произведено по 4 испытания на каждом из трех
+уровней фактора <em>А</em>. Методом <a href="hlp/hlp-06-1.html">дисперсионного
+анализа </a>проверить нулевую гипотезу о
+равенстве групповых средних на уровне
+значимости 0,05. Данные испытаний хранятся в файле
+LR-6.xls 
+
+<ol>
+  <li>Откройте файл <a href="data/lr-6.xls">LR-6.xls</a>. Сохраните
+    его в указанном преподавателем месте под тем же
+    именем.</li>
+  <li>Перейдите на вкладку “Data-1”. Скопируйте данные
+    с этого листа на новый рабочий лист с именем
+    &quot;Res-1-1&quot;.</li>
+  <li>Заполните следующую таблицу:</li>
+  <p>&nbsp;</p>
+  <table BORDER="1" CELLSPACING="1" CELLPADDING="2" WIDTH="1051">
+    <tr>
+      <td WIDTH="7%" VALIGN="MIDDLE" ROWSPAN="3" HEIGHT="17" bordercolor="#000000"><font
+      FACE="Arial" SIZE="2"><p ALIGN="CENTER">№</font></td>
+      <td WIDTH="62%" VALIGN="TOP" COLSPAN="6" HEIGHT="17" bordercolor="#000000"><font
+      FACE="Arial"><p ALIGN="CENTER">Уровни фактора А</font></td>
+      <td WIDTH="31%" VALIGN="TOP" COLSPAN="3" HEIGHT="17" bordercolor="#000000"><font
+      FACE="Arial"><p ALIGN="CENTER">Итоговые столбцы</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="29%" VALIGN="TOP" COLSPAN="2" HEIGHT="17" bordercolor="#000000"><font
+      FACE="Arial"><b><p ALIGN="CENTER">А<sub>1</sub></b></font></td>
+      <td WIDTH="28%" VALIGN="TOP" COLSPAN="2" HEIGHT="17" bordercolor="#000000"><font
+      FACE="Arial"><b><p ALIGN="CENTER">А<sub>2</sub></b></font></td>
+      <td WIDTH="5%" VALIGN="TOP" COLSPAN="2" HEIGHT="17" bordercolor="#000000"><font
+      FACE="Arial" SIZE="2"><b><p ALIGN="CENTER">. . .</b></font></td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000"><font FACE="Arial" SIZE="1"><b><p
+      ALIGN="CENTER">Девиаты</b></font></td>
+      <td WIDTH="6%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000"><font FACE="Arial" SIZE="1"><b><p
+      ALIGN="CENTER">Степ. свободы</b></font></td>
+      <td WIDTH="11%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000"><font FACE="Arial" SIZE="1"><b><p
+      ALIGN="CENTER">Дисперсии</b></font></td>
+    </tr>
+    <tr>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="15" bordercolor="#000000"><i><p ALIGN="CENTER">x</i><sub>1<i>i</i></sub></td>
+      <td WIDTH="16%" VALIGN="TOP" HEIGHT="15" bordercolor="#000000"><font SIZE="2"><p
+      ALIGN="CENTER"><img src="images/image181.gif" width="66" height="28"></font></td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="15" bordercolor="#000000"><i><p ALIGN="CENTER">x</i><sub>2<i>i</i></sub></td>
+      <td WIDTH="15%" VALIGN="TOP" HEIGHT="15" bordercolor="#000000"><font SIZE="2"><p
+      ALIGN="CENTER"><img src="images/image182.gif" width="69" height="28"></font></td>
+      <td WIDTH="3%" VALIGN="TOP" HEIGHT="15" bordercolor="#000000"><font FACE="Arial" SIZE="2"><b><p
+      ALIGN="CENTER">. . .</b></font></td>
+      <td WIDTH="3%" VALIGN="TOP" HEIGHT="15" bordercolor="#000000"><font FACE="Arial" SIZE="2"><b><p
+      ALIGN="CENTER">. . .</b></font></td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="15" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="6%" VALIGN="TOP" HEIGHT="15" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="11%" VALIGN="TOP" HEIGHT="15" bordercolor="#000000">&nbsp;</td>
+    </tr>
+    <tr>
+      <td WIDTH="7%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000"><font FACE="Arial" SIZE="2"><p
+      ALIGN="CENTER">1</font></td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000"><i><p ALIGN="CENTER">x</i><sub>11</sub></td>
+      <td WIDTH="16%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000"><i><p ALIGN="CENTER">x</i><sub>21</sub></td>
+      <td WIDTH="15%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="3%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="3%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="6%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="11%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000">&nbsp;</td>
+    </tr>
+    <tr>
+      <td WIDTH="7%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000"><font FACE="Arial" SIZE="2"><p
+      ALIGN="CENTER">2</font></td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000"><i><p ALIGN="CENTER">x</i><sub>12</sub></td>
+      <td WIDTH="16%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000"><i><p ALIGN="CENTER">x</i><sub>22</sub></td>
+      <td WIDTH="15%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="3%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="3%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="6%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="11%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+    </tr>
+    <tr>
+      <td WIDTH="7%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000"><font FACE="Arial" SIZE="2"><p
+      ALIGN="CENTER">3</font></td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000"><i><p ALIGN="CENTER">x</i><sub>13</sub></td>
+      <td WIDTH="16%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000"><i><p ALIGN="CENTER">x</i><sub>23</sub></td>
+      <td WIDTH="15%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="3%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="3%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="6%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="11%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+    </tr>
+    <tr>
+      <td WIDTH="7%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000"><font FACE="Arial" SIZE="2"><b><p
+      ALIGN="CENTER">. . .</b></font></td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000"><font FACE="Arial" SIZE="2"><b><p
+      ALIGN="CENTER">. . .</b></font></td>
+      <td WIDTH="16%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000"><font FACE="Arial" SIZE="2"><b><p
+      ALIGN="CENTER">. . .</b></font></td>
+      <td WIDTH="15%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="3%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="3%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="6%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="11%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000">&nbsp;</td>
+    </tr>
+    <tr>
+      <td WIDTH="7%" VALIGN="MIDDLE" HEIGHT="17" bordercolor="#000000"><font FACE="Arial"
+      SIZE="2"><b><p ALIGN="CENTER"><img src="images/image183.gif" width="17" height="24"></b></font></td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000"><font FACE="Arial" SIZE="2"><b><p
+      ALIGN="CENTER"><img src="images/image184.gif" width="76" height="76"></b></font></td>
+      <td WIDTH="16%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000"><font FACE="Arial" SIZE="2"><b><p
+      ALIGN="CENTER"><img src="images/image185.gif" width="81" height="76"></b></font></td>
+      <td WIDTH="15%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="3%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="3%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="6%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="11%" VALIGN="TOP" HEIGHT="17" bordercolor="#000000">&nbsp;</td>
+    </tr>
+    <tr>
+      <td WIDTH="7%" VALIGN="MIDDLE" HEIGHT="16" bordercolor="#000000"><font FACE="Arial"
+      SIZE="2"><b><p ALIGN="JUSTIFY">Общ.</b></font></td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="16%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000"><font FACE="Arial" SIZE="2"><b><p
+      ALIGN="CENTER"><img src="images/image186.gif" width="144" height="52"></b></font></td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="15%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000"><font FACE="Arial" SIZE="2"><b><p
+      ALIGN="CENTER"><img src="images/image187.gif" width="149" height="52"></b></font></td>
+      <td WIDTH="3%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="3%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="13%" VALIGN="MIDDLE" HEIGHT="16" bordercolor="#000000"><font FACE="Arial"
+      SIZE="2"><b><p ALIGN="CENTER"><img src="images/image188.gif" width="118" height="38"></b></font></td>
+      <td WIDTH="6%" VALIGN="MIDDLE" HEIGHT="16" bordercolor="#000000"><i><p ALIGN="CENTER">k<font
+      FACE="Times New Roman"><sub>общ</sub></font></i></td>
+      <td WIDTH="11%" VALIGN="MIDDLE" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+    </tr>
+    <tr>
+      <td WIDTH="7%" VALIGN="MIDDLE" HEIGHT="16" bordercolor="#000000"><font FACE="Arial"
+      SIZE="2"><b><p ALIGN="JUSTIFY">Факторн.</b></font></td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000"><font FACE="Arial" SIZE="2"><b><p
+      ALIGN="CENTER"><img src="images/image190.gif" width="120" height="28"></b></font></td>
+      <td WIDTH="16%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000"><font FACE="Arial" SIZE="2"><b><p
+      ALIGN="CENTER"><img src="images/image191.gif" width="126" height="28"></b></font></td>
+      <td WIDTH="15%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="3%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="3%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="13%" VALIGN="MIDDLE" HEIGHT="16" bordercolor="#000000"><font FACE="Arial"
+      SIZE="2"><b><p ALIGN="CENTER"><img src="images/image192.gif" width="85" height="38"></b></font></td>
+      <td WIDTH="6%" VALIGN="MIDDLE" HEIGHT="16" bordercolor="#000000"><i><p ALIGN="CENTER">k<sub>x</sub></i></td>
+      <td WIDTH="11%" VALIGN="MIDDLE" HEIGHT="16" bordercolor="#000000"><p align="center"><img
+      src="images/image189.gif" width="62" height="50" alt="image189.gif (1026 bytes)"></td>
+    </tr>
+    <tr>
+      <td WIDTH="7%" VALIGN="MIDDLE" HEIGHT="16" bordercolor="#000000"><font FACE="Arial"
+      SIZE="2"><b><p ALIGN="JUSTIFY">Остат.</b></font></td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="16%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="13%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="15%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="3%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="3%" VALIGN="TOP" HEIGHT="16" bordercolor="#000000">&nbsp;</td>
+      <td WIDTH="13%" VALIGN="MIDDLE" HEIGHT="16" bordercolor="#000000"><i><p ALIGN="CENTER">D<sub>e</sub>=D<font
+      FACE="Times New Roman"><sub>общ</sub></font>-D<sub>x</sub></i></td>
+      <td WIDTH="6%" VALIGN="MIDDLE" HEIGHT="16" bordercolor="#000000"><i><p ALIGN="CENTER">k<sub>e</sub></i></td>
+      <td WIDTH="11%" VALIGN="MIDDLE" HEIGHT="16" bordercolor="#000000"><font FACE="Arial"
+      SIZE="2"><b><p ALIGN="CENTER"><img src="images/image193.gif" width="60" height="46"></b></font></td>
+    </tr>
+  </table>
+  <li>Вычислите наблюдаемое значение <em>F-</em>критерия
+    как отношение факторной и остаточной дисперсий.</li>
+  <li>Вычислите критическое значение <em>F-</em>критерия
+    по формуле =FРАСПОБР(<img src="images/alpha.gif" width="14" height="14"
+    alt="alpha.gif (848 bytes)" align="middle">;<em>&nbsp;k<sub>x</sub></em>;<em>&nbsp;k<sub>e</sub></em>)
+    (<a href="images/res-06-1.jpg">ответ можно посмотреть здесь</a>).
+    Сделайте выводы о значимости или
+    незначимостиразличий между групповыми средними.
+  </li>
+  <li>Повторите все эти вычисления, использовав
+    инструмент &quot;Однофакторный дисперсионный
+    анализ&quot; надстройки &quot;Анализ данных&quot;.
+    Результаты анализа выведите на новый рабочий
+    лист Res-1-2 (<a href="images/res-06-2.jpg">ответ можно посмотреть
+    здесь</a>).</li>
+</ol>
+
+<p>Повторите все эти вычисления с данными с
+рабочего листа Data-2. Результаты расчетов выведите
+на рабочие листы Res-1-2 (<a href="images/res-06-3.jpg">ответ
+можно посмотреть здесь</a>) и Res-2-2 (<a href="images/res-06-4.jpg">ответ
+можно посмотреть здесь</a>).</p>
+
+<p><b>Задание 1</b><strong>. Решите следующую задачу</strong> </p>
+
+<p>На рабочем листе Data-3 файла LR-6.xls приведены
+данные о зарплате преподавателей университета
+Флорида (США). Методом дисперсионного анализа
+проверить нулевую гипотезу о равенстве средних
+зарплат в различных колледжах университета (<a
+href="images/res-06-5.jpg">ответ можно посмотреть здесь</a>).</p>
+
+<p>&nbsp;</p>
+</body>
+</html>

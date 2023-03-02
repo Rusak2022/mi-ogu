@@ -1,0 +1,68 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 3.0">
+<title>Описательная статистика</title>
+</head>
+
+<body BACKGROUND="../../bgrLab.jpg">
+
+<h2>Однофакторный дисперсионный анализ</h2>
+
+<p>Дисперсионный анализ однофакторных комплексов
+удобно проводить по следующей схеме: 
+
+<ol>
+  <li>Первичные данные, подлежащие дисперсионному
+    анализу, группируют в виде комбинационной
+    таблицы (см. табл.&nbsp;1), в которой градации
+    организованного (регулируемого) фактора <i>A</i>
+    обычно располагают по горизонтали в верхней
+    части таблицы, а числовые значения признака <i>X</i>
+    , т. е. варианты <i>x<sub>ij</sub></i> , размещают
+    соответственно по градациям фактора <i>A</i>.</li>
+  <li>Сгруппировав исходные данные, как указано в
+    п.&nbsp;1, приступают к расчету девиат:<br>
+    <img src="images/dev_common.gif" width="163" height="54" alt="dev_common.gif (1292 bytes)"><br>
+    <img src="images/dev_fact.gif" width="250" height="49" alt="dev_fact.gif (1387 bytes)"><br>
+    <img src="images/dev_err.gif" width="100" height="25" alt="dev_err.gif (994 bytes)"> <br>
+    где <i>x<sub>ij</sub></i> — варианты, или даты, входящие в
+    состав комплекса; <i>n<sub>i</sub></i> — численность
+    вариант <i>x</i> в каждой из градаций дисперсионного
+    комплекса, <i>a</i> — число градаций действующего
+    фактора.</li>
+  <li>Закончив расчет девиат, переходят к определению
+    чисел степеней свободы <i>k</i> , которые равны:<br>
+    <i>k<sub> общ&nbsp;</sub></i>=&nbsp;<i>n</i><sub>1&nbsp;</sub>+&nbsp;<i>n</i><sub>2&nbsp;</sub>+…–&nbsp;
+    1 для общего варьирования;<br>
+    <i>k<sub>x&nbsp;</sub></i>=&nbsp;<i>a&nbsp;–</i> &nbsp;1
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    для факториального варьирования;<br>
+    <i>k<sub>e&nbsp;</sub></i>=&nbsp;<i>k<sub> общ&nbsp;</sub>–&nbsp;k<sub>x</sub></i>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; для
+    остаточной вариации.<br>
+    Через <i>a</i> обозначено число градаций фактора <i>A</i>.</li>
+  <li>Делением девиат на соответствующие числа
+    степеней свободы получают выборочные дисперсии <img
+    src="images/s2_06.gif" width="81" height="29" alt="s2_06.gif (1022 bytes)" align="middle">:<br>
+    <img src="images/disp_06.gif" width="238" height="52" alt="disp_06.gif (1402 bytes)"></li>
+  <li>Наконец определяют дисперсионное отношение<br>
+    <img src="images/fisher_06.gif" width="145" height="26" alt="fisher_06.gif (1114 bytes)">,<br>
+    по которому судят о действии фактора <i>A</i> на
+    результативный признак. Так как фактически
+    полученное дисперсионное отношение <i>F</i>
+    является величиной случайной, его необходимо
+    сравнить с табличным (стандартным) значением
+    критерия Фишера. Нулевую гипотезу отвергают и
+    эффективность действия фактора <i>A</i> на
+    результативный признак <i>X</i> признают
+    статистически достоверной, если <i>F &gt; F<sub> kx, ke</sub></i>(<img
+    src="images/alpha.gif" width="14" height="14" alt="alpha.gif (848 bytes)" align="middle">)
+    ; в противном случае отвергать нулевую гипотезу
+    нельзя. </li>
+</ol>
+
+<p>&nbsp;</p>
+</body>
+</html>

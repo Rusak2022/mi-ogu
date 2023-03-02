@@ -1,0 +1,190 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<title>LR-05 Regr</title>
+</head>
+
+<body BACKGROUND="..\bgrLab.jpg">
+<b>
+
+<p>ЛАБОРАТОРНАЯ РАБОТА № LR-05 </p>
+</b>
+
+<hr>
+<b>
+
+<p></b><strong>ЛИНЕЙНАЯ РЕГРЕССИЯ</strong><b></p>
+
+<p>Задание 1</b><strong>.&nbsp; Использование уравнения
+регресии для прогнозирования</strong> </p>
+
+<p>На основании данных о количестве врачей всех специальностей
+в организациях, оказывающих медицинские услуги за 2004-2021гг., на основе
+модели линейного тренда постройте прогноз
+численности врачей на следующие 5 лет. Найдите границы 95%-го
+доверительного интервала для прогноза.
+
+<ol>
+  <li>Откройте файл 
+<a href="data/lr-5-01.xls">В-1</a>, &nbsp
+<a href="data/lr-5-02.xls">В-2</a>, &nbsp
+<a href="data/lr-5-03.xls">В-3</a>, &nbsp
+<a href="data/lr-5-04.xls">В-4</a>, &nbsp
+<a href="data/lr-5-05.xls">В-5</a>, &nbsp
+<a href="data/lr-5-06.xls">В-6</a>, &nbsp
+<a href="data/lr-5-07.xls">В-7</a>, &nbsp
+<a href="data/lr-5-08.xls">В-8</a>, &nbsp
+<a href="data/lr-5-09.xls">В-9</a>, &nbsp
+<a href="data/lr-5-10.xls">В-10</a>, &nbsp
+<a href="data/lr-5-11.xls">В-11</a>, &nbsp
+<a href="data/lr-5-12.xls">В-12</a>, &nbsp
+<a href="data/lr-5-13.xls">В-13</a>, &nbsp
+<a href="data/lr-5-14.xls">В-14</a>, &nbsp
+<a href="data/lr-5-15.xls">В-15</a>, &nbsp
+<a href="data/lr-5-16.xls">В-16</a>, &nbsp
+<a href="data/lr-5-17.xls">В-17</a>, &nbsp
+<a href="data/lr-5-18.xls">В-18</a>, &nbsp
+<a href="data/lr-5-19.xls">В-19</a>, &nbsp
+<a href="data/lr-5-20.xls">В-20</a> &nbsp
+и сохраните его в своей папке.</li>
+  <li>Скопируйте данные с листа "Врачи" на новый рабочий
+    лист с именем &quot;regr-1&quot;. </li>
+  <li>Постройте диаграмму типа &quot;График&quot; по своим
+    данным, оформите в соответствии с приведенным образцом:</li>
+</ol>
+
+
+    <p><center><img src="images/regr-01.gif" width="468" height="356" alt="regr-01.gif (6747 bytes)"> </center></p>
+
+<ol start="5">
+  <li>В качестве меток оси <i>Х</i> используйте значения
+    столбца <i>А</i>.
+  <li>Постройте линию линейного тренда на графике.
+    Выведите на график уравнение этой линии
+    (уравнение линейной регрессии) и значение
+    величины достоверности аппроксимации <em>R</em><sup>2</sup>
+    (см. рис. выше). Чем ближе к 1 значение <em>R</em><sup>2</sup>, тем более точно
+линия тренда описывает фактические данные.
+  <li>Используя инструмент &quot;Регрессия&quot;, получите
+    значения регрессионных коэффициентов.
+    Сравните значения полученных коэффициентов с
+    уравнением регрессии на графике.</li>  <li>Используя вычисленные коэффициенты регрессии,
+    постройте прогноз численности врачей на следующие 5 лет. Вычислите границы 95%-го
+    доверительного интервала для каждого из
+    предсказанных значений (<a href="images/res-04-1.jpg">пример оформления
+    можно посмотреть здесь</a>).</li>
+  <li>Постройте второй график и отобразите на нем
+    исходные данные, линию тренда и границы 95%-го
+    доверительного интервала. Оформите в соответствии с
+    данным образцом:<br>
+    
+</ol>
+
+    <p><center><img src="images/04-2.gif" width="460" height="342" alt="04-2.gif (6705 bytes)"></center></p>
+
+<p><strong>Задание 2. Анализ «живых» данных.</strong> </p>
+<ol>
+ <li>На сайте госстатистики <a href="https://orel.gks.ru/naselen">https://orel.gks.ru/naselen</a> (основные показатели), скачайте
+данные «Рождаемость, смертность и естественный прирост (убыль) населения в Орловской области»
+
+<li>Постройте прогноз на 5 лет, вычислив коэффициенты, с помощью инструмента «Регрессия»
+<ul>
+<li> для числа людей родившихся в городе;
+<li> для числа людей умерших в сельской местности.
+</ul>
+</ol>
+
+
+</p>
+
+
+<p><strong>Задание 3. Множественная регрессия</strong> </p>
+<p>Маркетинговый отдел торговой фирмы проводит
+исследование зависимости объема продаж
+некоторого товара от его цены и рекламного
+бюджета. Результаты исследований представлены в
+файле LR-4.xls на вкладке &quot;Продажи&quot;. Составьте
+прогноз продажи товара при следующих значениях
+рекламного бюджета и цены:</p>
+<div align="center"><center>
+
+<table BORDER="1" CELLSPACING="1" CELLPADDING="7" WIDTH="288">
+  <tr>
+    <td WIDTH="87" VALIGN="TOP" align="center"><b>Рекламный бюджет</b></td>
+    <td WIDTH="66" VALIGN="TOP" align="center"><b>Цена</b></td>
+    <td WIDTH="57" VALIGN="TOP" align="center"><b>Объем продаж<br>
+    (прогноз)</b></td>
+    <td WIDTH="77" VALIGN="TOP" align="center"><b>Объем продаж<br>
+    (ниж.&nbsp;95%)</b></td>
+    <td WIDTH="61" VALIGN="TOP" align="center"><b>Объем продаж<br>
+    (верх.&nbsp;95%)</b></td>
+  </tr>
+  <tr>
+    <td WIDTH="87" VALIGN="TOP" align="right">50 000</td>
+    <td WIDTH="66" VALIGN="TOP" align="center">25</td>
+    <td WIDTH="57" VALIGN="TOP">&nbsp;</td>
+    <td WIDTH="77" VALIGN="TOP">&nbsp;</td>
+    <td WIDTH="61" VALIGN="TOP">&nbsp;</td>
+  </tr>
+  <tr>
+    <td WIDTH="87" VALIGN="TOP" align="right">75 000</td>
+    <td WIDTH="66" VALIGN="TOP" align="center">50</td>
+    <td WIDTH="57" VALIGN="TOP">&nbsp;</td>
+    <td WIDTH="77" VALIGN="TOP">&nbsp;</td>
+    <td WIDTH="61" VALIGN="TOP">&nbsp;</td>
+  </tr>
+  <tr>
+    <td WIDTH="87" VALIGN="TOP" align="right">100 000</td>
+    <td WIDTH="66" VALIGN="TOP" align="center">75</td>
+    <td WIDTH="57" VALIGN="TOP">&nbsp;</td>
+    <td WIDTH="77" VALIGN="TOP">&nbsp;</td>
+    <td WIDTH="61" VALIGN="TOP">&nbsp;</td>
+  </tr>
+  <tr>
+    <td WIDTH="87" VALIGN="TOP" align="right">125 000</td>
+    <td WIDTH="66" VALIGN="TOP" align="center">25</td>
+    <td WIDTH="57" VALIGN="TOP">&nbsp;</td>
+    <td WIDTH="77" VALIGN="TOP">&nbsp;</td>
+    <td WIDTH="61" VALIGN="TOP">&nbsp;</td>
+  </tr>
+  <tr>
+    <td WIDTH="87" VALIGN="TOP" align="right">150 000</td>
+    <td WIDTH="66" VALIGN="TOP" align="center">50</td>
+    <td WIDTH="57" VALIGN="TOP">&nbsp;</td>
+    <td WIDTH="77" VALIGN="TOP">&nbsp;</td>
+    <td WIDTH="61" VALIGN="TOP">&nbsp;</td>
+  </tr>
+  <tr>
+    <td WIDTH="87" VALIGN="TOP" align="right">175 000</td>
+    <td WIDTH="66" VALIGN="TOP" align="center">75</td>
+    <td WIDTH="57" VALIGN="TOP">&nbsp;</td>
+    <td WIDTH="77" VALIGN="TOP">&nbsp;</td>
+    <td WIDTH="61" VALIGN="TOP">&nbsp;</td>
+  </tr>
+</table>
+</center></div>
+
+<ol>
+  <li>Перейдите на вкладку “Продажи”.</li>
+  <li>Используя инструмент &quot;Регрессия&quot;, получите
+    значения регрессионных коэффициентов,
+    описывающих зависимость объема продаж от
+    следующих параметров:</li>
+  <ul type="square">
+    <li>только от цены товара;</li>
+    <li>только от рекламного бюджета;</li>
+    <li>от цены товара и от рекламного бюджета вместе. </li>
+  </ul>
+  <li>Вычислите величину достоверности
+    аппроксимации <em>R</em><sup>2</sup> в каждом случае.
+    Сформулируйте выводы и запишите их.</li>
+  <li>Постройте соответствующие графики. Образец их
+    оформления дан выше, в Задании 1.</li>
+  <li>Используя эти коэффициенты, предскажите объемы
+    продаж при различных значениях рекламного
+    бюджета и цены товара (<a href="images/res-04-3.jpg">ответ
+    можно посмотреть здесь</a>). </li>
+</ol>
+</body>
+</html>

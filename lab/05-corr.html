@@ -1,0 +1,215 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<title>LR-06 Corr</title>
+</head>
+
+<body BACKGROUND="..\bgrLab.jpg">
+<b>
+
+<p>ЛАБОРАТОРНАЯ РАБОТА № LR-06 </p>
+</b>
+
+<hr>
+<b>
+
+<p></b><strong>КОРРЕЛЯЦИЯ</strong><b></p>
+
+<p>Задание 1</b><strong>.&nbsp; Вычисление коэффициента
+корреляции Пирсона</strong> </p>
+
+<p>Проведены измерения уровня гемоглобина в крови и скоростьи оседания эритроцитов у 30 мужчин. 
+Методами корреляционного анализа
+определите, существует ли связь между этими показателями.&nbsp; 
+
+<ol>
+  <li>Откройте файл &nbsp
+<a href="data/lr-6-01.xls">В-1</a>, &nbsp
+<a href="data/lr-6-02.xls">В-2</a>, &nbsp
+<a href="data/lr-6-03.xls">В-3</a>, &nbsp
+<a href="data/lr-6-04.xls">В-4</a>, &nbsp
+<a href="data/lr-6-05.xls">В-5</a>, &nbsp
+<a href="data/lr-6-06.xls">В-6</a>, &nbsp
+<a href="data/lr-6-07.xls">В-7</a>, &nbsp
+<a href="data/lr-6-08.xls">В-8</a>, &nbsp
+<a href="data/lr-6-09.xls">В-9</a>, &nbsp
+<a href="data/lr-6-10.xls">В-10</a>, &nbsp
+<a href="data/lr-6-11.xls">В-11</a>, &nbsp
+<a href="data/lr-6-12.xls">В-12</a>, &nbsp
+<a href="data/lr-6-13.xls">В-13</a>, &nbsp
+<a href="data/lr-6-14.xls">В-14</a>, &nbsp
+<a href="data/lr-6-15.xls">В-15</a>, &nbsp
+<a href="data/lr-6-16.xls">В-16</a>, &nbsp
+<a href="data/lr-6-17.xls">В-17</a>, &nbsp
+<a href="data/lr-6-18.xls">В-18</a>, &nbsp
+<a href="data/lr-6-19.xls">В-19</a>, &nbsp
+<a href="data/lr-6-20.xls">В-20</a>. &nbsp
+    Сохраните его в своей папке.</li>
+  <li>Перейдите на рабочий лист "Гемоглобин-СОЭ". Скопируйте
+    данные с этого листа на новый рабочий лист с
+    именем &quot;corr-1&quot;. </li>
+  <li>Вычислите значение выборочного коэффициента
+    корреляции Пирсона по формуле: </li>
+</ol>
+
+<p align="center"><img src="images/corr-pears.gif" width="216" height="105"
+alt="corr-pears.gif (1709 bytes)" align="middle">,</p>
+
+<blockquote>
+<p>Для этого:</p>
+  <p>-Заполните следующую таблицу:</p>
+</blockquote>
+
+<table border="1" width="66%" align="center">
+  <tr>
+    <td width="9%" align="center"><i>x<sub>i</sub></i></td>
+    <td width="10%" align="center"><i>y<sub>i</sub></i></td>
+    <td width="12%" align="center"><img src="images/x_i-x_aver.gif" width="41" height="24"
+    alt="x_i-x_aver.gif (901 bytes)"></td>
+    <td width="21%" align="center"><img src="images/x_i-x_aver2.gif" width="60" height="29"
+    alt="x_i-x_aver2.gif (960 bytes)"></td>
+    <td width="17%" align="center"><img src="images/y_i-y_aver.gif" width="45" height="24"
+    alt="y_i-y_aver.gif (913 bytes)"></td>
+    <td width="29%" align="center"><img src="images/y_i-y_aver2.gif" width="63" height="28"
+    alt="y_i-y_aver2.gif (965 bytes)"></td>
+    <td width="51%" align="center"><img src="images/xiyi-averxy.gif" width="106" height="24"
+    alt="xiyi-averxy.gif (1026 bytes)"></td>
+  </tr>
+  <tr>
+    <td width="9%" align="center"><i>x</i><sub>1</sub></td>
+    <td width="9%" align="center"><i>y</i><sub>1</sub></td>
+    <td width="12%">&nbsp;</td>
+    <td width="21%">&nbsp;</td>
+    <td width="17%">&nbsp;</td>
+    <td width="29%">&nbsp;</td>
+    <td width="51%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td WIDTH="27%" VALIGN="MIDDLE" align="center"><i>x</i><sub>2</sub></td>
+    <td WIDTH="27%" VALIGN="MIDDLE" align="center"><i>y</i><sub>2</sub></td>
+    <td width="12%">&nbsp;</td>
+    <td width="21%">&nbsp;</td>
+    <td width="17%">&nbsp;</td>
+    <td width="29%">&nbsp;</td>
+    <td width="51%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td WIDTH="27%" VALIGN="MIDDLE" align="center"><strong>.&nbsp;.&nbsp;.&nbsp;</strong></td>
+    <td WIDTH="27%" VALIGN="MIDDLE" align="center"><strong>.&nbsp;.&nbsp;.&nbsp;</strong></td>
+    <td width="12%">&nbsp;</td>
+    <td width="21%">&nbsp;</td>
+    <td width="17%">&nbsp;</td>
+    <td width="29%">&nbsp;</td>
+    <td width="51%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td WIDTH="27%" VALIGN="MIDDLE" align="center"><p ALIGN="CENTER"><i>x<sub>n</sub></i></td>
+    <td WIDTH="27%" VALIGN="MIDDLE" align="center"><p ALIGN="CENTER"><i>y<sub>n</sub></i></td>
+    <td width="12%">&nbsp;</td>
+    <td width="21%">&nbsp;</td>
+    <td width="17%">&nbsp;</td>
+    <td width="29%">&nbsp;</td>
+    <td width="51%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="9%" align="center"><img src="images/x_aver-def1.gif" width="66" height="70"
+    alt="x_aver-def1.gif (1060 bytes)"></td>
+    <td width="10%" align="center"><img src="images/y_aver-def.gif" width="67" height="70"
+    alt="y_aver-def.gif (1072 bytes)"></td>
+    <td width="12%"><p align="center">0</td>
+    <td width="21%"><img src="images/sum_xi-xaver2.gif" width="84" height="50"
+    alt="sum_xi-xaver2.gif (1076 bytes)"></td>
+    <td width="17%"><p align="center">0</td>
+    <td width="29%"><img src="images/sum_yi-yaver2.gif" width="86" height="50"
+    alt="sum_yi-yaver2.gif (1086 bytes)"></td>
+    <td width="51%"><img src="images/sum_xiyi-averxy.gif" width="126" height="50"
+    alt="sum_xiyi-averxy.gif (1164 bytes)"></td>
+  </tr>
+</table>
+<blockquote>
+<p>-Определите наличие связи между признаками (чем ближе |r| к 1, тем теснее связь; знак "+" у r означает прямую связь, а знак "-" - обратную)</p>
+</blockquote>
+<ol start="4">
+<!--  <li>Сравните величину полученного коэффициента
+    корреляции со значением величины достоверности
+    аппроксимации <em>R</em><sup>2</sup>, полученным в
+    предыдущей работе. <br>
+    Правильность вычислений можно <a href="images/res-05-1.jpg">проверить
+    здесь</a>.</li> -->
+  <li>Повторите вычисления, используя интрумент
+    &quot;Корреляция&quot; надстройки &quot;Анализ
+    данных&quot;.</li>
+</ol>
+
+<p><strong>Задание 2. Проверка гипотезы о значимости
+коэффициента корреляции</strong></p>
+
+<p>Проверьте <a href="hlp/hlp-05-2.html">гипотезу о значимости
+коэффициента корреляции</a>, вычисленного в
+Задании&nbsp;1. Для этого 
+
+<ol>
+  <li>Вычислите стандартную ошибку коэффициента
+    корреляции по формуле<p align="center"><img src="images/corr-err.gif"
+    width="90" height="49" alt="corr-err.gif (1086 bytes)"></p>
+  </li>
+  <li>Вычислите эмпирическое значение критерия
+    Стьюдента по формуле <em>t=|r/s<sub>r</sub></em>|.</li>
+  <li>Вычислите критическое значение двустороннего
+    критерия Стьюдента на уровне <img src="images/alpha.gif"
+    width="14" height="14" alt="alpha.gif (848 bytes)" align="middle">=0,01 по формуле<p
+    align="center">=СТЬЮДРАСПОБР(<img src="hlp/images/alpha.gif" width="14"
+    height="14" alt="alpha.gif (848 bytes)" align="middle">;<em> n-2</em>)</p>
+  </li>
+  <li>Сравните эмпирическое значение коэффициента
+    корреляции с критическим. Сделайте выводы о
+    значимости коэффициента корреляции.</li>
+  <li>Проверьте гипотезу о значимости коэффициента
+    корреляции на уровне 0,05.<br>
+   <!-- Правильность вычислений можно <a href="images/res-05-2.jpg">проверить
+    здесь</a>. --> </li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p><strong>Задание 3. </strong>Перейдите на лист "Йод-заболеваемость". Определите коэффициент
+корреляции между среднесуточным содержанием йода в воде и пище жителей десяти районов страны и пораженностью 
+населения заболеванием щитовидной железы.
+Определите его значимость на уровне 0,01 и
+0,05. Результаты поместите на новый рабочий лист
+corr-2.</p>
+
+<!-- <p>Правильность вычислений можно <a href="images/res-05-3.jpg">проверить
+здесь</a>.</p> -->
+
+<p>&nbsp;</p>
+
+<p><strong>Задание 4. <a href="hlp/hlp-04-1.html">Корреляция
+альтернативных признаков</a></strong></p>
+
+<p>Измерить связь между прививками от гриппа и
+снижением заболеваемости по следующим данным:</p>
+
+<table border="1" width="46%">
+  <tr>
+    <td width="25%">&nbsp;</td>
+    <td width="25%" align="center">Заболели</td>
+    <td width="25%" align="center">Не заболели</td>
+  </tr>
+  <tr>
+    <td width="25%">Привитые</td>
+    <td width="25%" align="center">30</td>
+    <td width="25%" align="center">20</td>
+  </tr>
+  <tr>
+    <td width="25%">Непривитые</td>
+    <td width="25%" align="center">15</td>
+    <td width="25%" align="center">5</td>
+  </tr>
+</table>
+
+<p>Что означает знак &quot;минус&quot; у вычисленного
+Вами коэффициента контингенции?</p>
+</body>
+</html>
